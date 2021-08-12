@@ -22,6 +22,10 @@
  --cinza: rgb(160, 149, 149);
 }
 
+html{
+   scroll-behavior: smooth;
+}
+
 body{
    background-color: var(--preto);
 }
@@ -128,4 +132,12 @@ body{
    margin-top: 2rem;
    margin-left: 1rem;
    margin-right: 1rem;
+}
+
+.carrosel-filmes h2{
+   color: rgb(218, 213, 213);
+   font-size: 2rem;
+   font-family:'Poppins', sans-serif ;
+   text-transform: uppercase;
+   margin-bottom: 1rem;
 }
