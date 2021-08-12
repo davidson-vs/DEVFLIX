@@ -96,8 +96,17 @@ body{
    transition: 0.4s;
 }
 
+.botao a{
+   color:rgb(218, 213, 213) ;
+}
+
 .botao:hover{
    background-color: rgba(230, 224, 224,0.9);
+   color: rgb(14, 13, 13);
+}
+
+.botao:hover a{
+   
    color: rgb(14, 13, 13);
 }
 
