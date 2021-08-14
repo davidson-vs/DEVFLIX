@@ -59,7 +59,7 @@ body{
 .filme-principal{
    color: rgb(218, 213, 213);
    font-family:'Poppins', sans-serif ;
-   background-image:linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)100%), url(../../images/filme.jpg);
+   background-image:linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)100%), url(../images/filme.jpg);
    height: 32rem;
    background-size: cover;
    display: flex;
