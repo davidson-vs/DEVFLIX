@@ -1,6 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Arvo&family=Poppins:ital,wght@0,300;1,200&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Arvo&family=Poppins:ital,wght@0,300;1,200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.0/css/all.min.css");
 /* Fontes da página :
  font-family: 'Arvo', serif;
@@ -8,7 +8,7 @@
  font-family: 'Roboto', sans-serif;
  font-family: 'Bebas Neue', cursive; */
 
-*{
+* {
    padding: 0;
    margin: 0;
    box-sizing: border-box;
@@ -16,22 +16,22 @@
    text-decoration: none;
 }
 
-:root{
- --vermelho: rgba(229, 9, 20, .9);
- --preto: rgb(20, 20, 20);
- --cinza: rgb(160, 149, 149);
+:root {
+   --vermelho: rgba(229, 9, 20, 0.9);
+   --preto: rgb(20, 20, 20);
+   --cinza: rgb(160, 149, 149);
 }
 
-html{
+html {
    scroll-behavior: smooth;
 }
 
-body{
+body {
    background-color: var(--preto);
 }
 /* page's menu*/
 
-.container{
+.container {
    display: flex;
    align-items: center;
    width: 100%;
@@ -41,67 +41,71 @@ body{
    background-color: transparent;
 }
 
-.scroll{
+.scroll {
    background-color: var(--preto);
    transition: all 0.5s;
 }
 
-.container h1{
-   color:var(--vermelho);
-   margin-left:3rem ;
+.container h1 {
+   color: var(--vermelho);
+   margin-left: 3rem;
    margin-right: 5rem;
-   font-family: 'Roboto', sans-serif;
+   font-family: "Roboto", sans-serif;
    font-size: 2.2rem;
    font-weight: 700;
 }
 
-.container nav a{
-  color: rgb(160, 149, 149);
-  margin-right: 2.4rem;
-  font-size: 1rem;
+.container nav a {
+   color: rgb(160, 149, 149);
+   margin-right: 2.4rem;
+   font-size: 1rem;
 }
 
-.container nav a:hover{
+.container nav a:hover {
    color: whitesmoke;
-   transition:  color 0.6s;
+   transition: color 0.6s;
 }
 /*page's content */
-.filme-principal{
+.filme-principal {
    color: rgb(218, 213, 213);
-   font-family:'Poppins', sans-serif ;
-   background-image:linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)100%), url(../images/filme.jpg);
+   font-family: "Poppins", sans-serif;
+   background-image: linear-gradient(
+         rgba(0, 0, 0, 0.5),
+         rgba(0, 0, 0, 0.5) 100%
+      ),
+      url(../images/filme.jpg);
    height: 32rem;
    background-size: cover;
    display: flex;
-   flex-direction:column ;
+   flex-direction: column;
    justify-content: flex-end;
    align-items: flex-start;
 }
 
-.content{
+.content {
    display: flex;
-   flex-direction:column ;
+   flex-direction: column;
    justify-content: center;
    align-items: flex-start;
    margin-bottom: 1rem;
    margin-left: 1rem;
 }
 
-.content h2{
-   font-family: 'Bebas Neue', cursive;
+.content h2 {
+   font-family: "Bebas Neue", cursive;
    text-transform: uppercase;
    font-size: 2.8rem;
    letter-spacing: 2.5px;
 }
 
-.content p{
+.content p {
    margin-bottom: 2rem;
 }
 
-.botao{
+.botao {
    padding: 1rem;
-   background: rgba(0,0,0,.4);
-   color:rgb(218, 213, 213) ;
+   background: rgba(0, 0, 0, 0.4);
+   color: rgb(218, 213, 213);
    border: none;
    text-transform: uppercase;
    cursor: pointer;
@@ -110,44 +114,71 @@ body{
    transition: 0.4s;
 }
 
-.botao a{
-   color:rgb(218, 213, 213) ;
+.botao a {
+   color: rgb(218, 213, 213);
 }
 
-.botao:hover{
-   background-color: rgba(230, 224, 224,0.9);
+.botao:hover {
+   background-color: rgba(230, 224, 224, 0.9);
    color: rgb(14, 13, 13);
 }
 
-.botao:hover a{
-   
+.botao:hover a {
    color: rgb(14, 13, 13);
 }
 
-.botao i{
+.botao i {
    margin-right: 0.5rem;
 }
 
-.botao:nth-child(2) i{
-  font-size: 1rem;
+.botao:nth-child(2) i {
+   font-size: 1rem;
 }
 
-.box-filme{
+.box-filme {
    height: 100%;
    width: 100%;
    display: block;
 }
 
-.carrosel-filmes{
+.carrosel-filmes {
    margin-top: 2rem;
    margin-left: 1rem;
    margin-right: 1rem;
 }
 
-.carrosel-filmes h2{
+.carrosel-filmes h2 {
    color: rgb(218, 213, 213);
    font-size: 2rem;
-   font-family:'Poppins', sans-serif ;
+   font-family: "Poppins", sans-serif;
    text-transform: uppercase;
    margin-bottom: 1rem;
+}
+
+.item img:hover {
+   cursor: pointer;
+   transform: scale(1.1);
+   background-color: linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5) 100%
+   );
+   opacity: 0.8;
+   padding-left: 0.5rem;
+   padding-right: 0.5rem;
+   position: relative;
+}
+.item i {
+   font-size: 5rem;
+   color: white;
+   position: absolute;
+   top: 9rem;
+   left: 4.5rem;
+   z-index: 5;
+   opacity: 0;
+   cursor: pointer;
+}
+
+.item.show i {
+   opacity: 1;
+   cursor: pointer;
 }
