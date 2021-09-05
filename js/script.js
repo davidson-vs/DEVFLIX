@@ -8,7 +8,6 @@ window.addEventListener("scroll", () => {
 })
 
 const itens = document.querySelectorAll(".item")
-const item = document.querySelectorAll(".item")
 
 for (tag of itens) {
    tag.addEventListener("mouseenter", (e) => {
