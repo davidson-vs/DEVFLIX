@@ -10,7 +10,6 @@ window.addEventListener("scroll", () => {
 const itens = document.querySelectorAll(".item")
 const item = document.querySelectorAll(".item")
 
-console.log(item)
 for (tag of itens) {
    tag.addEventListener("mouseenter", (e) => {
       e.target.classList.toggle("show")
